@@ -12,7 +12,7 @@
 - Si no entens un enunciat, fes-ho amb la teva millor interpretació i escriu-la en un comentari de la cel·la (clic dret → `Insereix un comentari`). Es tindrà en compte en corregir.
 - Lliura a Classroom l'enllaç del teu full *i* l'enllaç del teu repositori (amb `test.md` i `teoria.md` dins).
 
-**Context.** La Lliga de robots acaba la temporada i cal un resum per repartir medalles. El fitxer `dades_trimestral_1bat-prog.csv` (a Classroom) té **24 recorreguts**, un per fila (files 2 a 25; la fila 1 són les capçaleres). Què hi ha a cada columna:
+**Context.** La Lliga de robots acaba la temporada i cal un resum per repartir medalles. El fitxer [`dades_trimestral_1bat-prog.csv`](dades_trimestral_1bat-prog.csv) (aquí al repositori, amb el botó de descàrrega, i també a Classroom) té **24 recorreguts**, un per fila (files 2 a 25; la fila 1 són les capçaleres). Què hi ha a cada columna:
 
 - `A` Equip · `B` Robot · `C` Categoria (Velocitat, Laberint o Sumo) · `D` Ronda · `E` Temps (durada del recorregut) · `F` Infraccions (quantes en ha fet) · `G` Contacte (correu).
 - `I2:J4`: taula de *longitud de la pista* (en metres) de cada categoria: a `I` la categoria, a `J` els metres.

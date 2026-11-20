@@ -2,7 +2,7 @@
 
 **L'enunciat és a [ENUNCIAT.md](ENUNCIAT.md).** Llegeix-lo aquí, en línia.
 
-Aquest repositori conté les plantilles de resposta de l'examen: `test.md` (el test) i `teoria.md` (les preguntes de teoria D1 i D2).
+Aquest repositori conté les plantilles de resposta de l'examen: `test.md` (el test), `teoria.md` (les preguntes de teoria D1 i D2) i el CSV de dades `dades_trimestral_1bat-prog.csv`.
 
 ## Com el fas servir
 1. Entra a `test.md` i a `teoria.md` i copia'n el contingut (botó **Raw**, i copia-ho tot).

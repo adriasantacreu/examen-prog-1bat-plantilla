@@ -10,7 +10,8 @@
 - Fes les parts en ordre; cada pas indica on va el resultat i la funció amb la seva documentació.
 - Encallat? Copia les columnes `M:Q` del full *Taula resolta* (enllaç a Classroom) com a valors (`Ctrl+Maj+V`). Aquell pas no puntua.
 - Si no entens un enunciat, fes-ho amb la teva millor interpretació i escriu-la en un comentari de la cel·la (clic dret → `Insereix un comentari`). Es tindrà en compte en corregir.
-- Lliura a Classroom l'enllaç del teu full *i* l'enllaç del teu repositori (amb `test.md` i `teoria.md` dins).
+- **Guia de temps** (1 h 30): A 25 min · B 12 · C 18 · D 5 · E 5 · repositori i lliurament 7. Així et sobren uns 18 min.
+- Lliura a Classroom l'enllaç del teu full *i* l'enllaç del teu repositori, que ha de ser **públic** (amb `test.md` i `teoria.md` dins). Abans de lliurar, obre l'enllaç del repositori en una finestra d'incògnit i comprova que el veus.
 
 **Context.** La Lliga de robots acaba la temporada i cal un resum per repartir medalles. El fitxer [`dades_trimestral_1bat-prog.csv`](dades_trimestral_1bat-prog.csv) (aquí al repositori, amb el botó de descàrrega, i també a Classroom) té **24 recorreguts**, un per fila (files 2 a 25; la fila 1 són les capçaleres). Què hi ha a cada columna:
 
@@ -60,13 +61,7 @@ La columna `G` (`Contacte`) té un correu per fila, com `voltors.zenit@robotica.
 
 > *Correu vàlid* = el correu *encaixa del tot* amb: lletres minúscules, un punt, lletres minúscules i el domini fix
 
-**[0,75 punts]**
-
-**B3.** A la cel·la `S1`, una fórmula que doni *quants correus no són vàlids*, mirant els resultats de la columna `Q` (files 2 a 25). *Funció: [`COUNTIF`](https://support.google.com/docs/answer/3093480?hl=en).*
-
-> *Invàlids* = comptar quantes files de la columna de correu vàlid diuen `FALSE`
-
-**[0,25 punts]**
+**[1 punt]**
 
 ---
 
@@ -74,9 +69,9 @@ La columna `G` (`Contacte`) té un correu per fila, com `voltors.zenit@robotica.
 
 Crea una pestanya nova anomenada `Resum`. Les fórmules d'aquesta pestanya *llegeixen les dades de la pestanya `Dades`* (columnes `A` equip, `C` categoria, `F` infraccions, `M` segons finals, `N` medalla, files 2 a 25). Tot ha d'estar fet amb fórmules, no a mà.
 
-**C1.** **Equip.** A `A1` escriu `Equip`. A `B1`, un desplegable (`Dades` → `Validació de dades` → llista) amb els 6 equips de la lliga (els noms de la columna `A` de `Dades`). Tria'n un: les cel·les de sota es calculen amb l'equip que hi hagi a `B1` i han de canviar quan en triïs un altre. **[0,5 punts]**
+**C1.** **Equip.** A `A1` escriu `Equip`. A `B1`, un desplegable (`Dades` → `Validació de dades` → llista) amb els 6 equips de la lliga (els noms de la columna `A` de `Dades`). Tria'n un: les cel·les de sota es calculen amb l'equip que hi hagi a `B1` i han de canviar quan en triïs un altre. **[0,75 punts]**
 
-**C2.** **Resultats de l'equip triat.** A la columna `A` escriu les etiquetes `Recorreguts`, `Infraccions`, `Millor temps` i `Ors` (files 2 a 5), i a `B2:B5` la fórmula de cada una: **[0,75 punts]**
+**C2.** **Resultats de l'equip triat.** A la columna `A` escriu les etiquetes `Recorreguts`, `Infraccions`, `Millor temps` i `Ors` (files 2 a 5), i a `B2:B5` la fórmula de cada una: **[1,5 punts]**
 
 - `B2`: nombre de recorreguts. *Funció: [`COUNTIFS`](https://support.google.com/docs/answer/3256550?hl=en).*
   > *Recorreguts* = comptar les files on l'equip és l'equip triat
@@ -87,25 +82,15 @@ Crea una pestanya nova anomenada `Resum`. Les fórmules d'aquesta pestanya *lleg
 - `B5`: medalles d'or (equip i medalla *Or*). *Funció: [`COUNTIFS`](https://support.google.com/docs/answer/3256550?hl=en)* (amb dues condicions).
   > *Ors* = comptar les files on l'equip és el triat *i* la medalla és Or
 
-**C3.** **Millor temps per categoria.** A `A8:A10` escriu les tres categories (`Velocitat`, `Laberint`, `Sumo`) i a `B8:B10` el millor temps final (en segons) de cada una, amb una fórmula que agafi la categoria de la cel·la de la seva fila (`A8`, `A9`, `A10`). *Funció: [`MINIFS`](https://support.google.com/docs/answer/7014063?hl=en).*
-
-> *Millor temps de la categoria* = el mínim dels segons finals de les files d'aquella categoria
-
-**[0,75 punts]**
-
-**C4.** **Gràfic de barres** de la taula `A8:B10` (`Insereix` → `Gràfic`), amb un títol i amb els eixos etiquetats de manera que s'entengui què mostra (categories i segons). **[0,5 punts]**
-
-**C5.** **Format condicional** a la pestanya `Dades`, columna `N` (`N2:N25`): fes que cada cel·la agafi un color de fons segons la medalla (un color per a *Or*, un altre per a *Plata* i un altre per a *Bronze*; el `-` sense color). Menú `Format` → `Format condicional`, regla «El text és exactament». **[0,5 punts]**
+**C3.** **Format condicional** a la pestanya `Dades`, columna `N` (`N2:N25`): fes que cada cel·la agafi un color de fons segons la medalla (un color per a *Or*, un altre per a *Plata* i un altre per a *Bronze*; el `-` sense color). Menú `Format` → `Format condicional`, regla «El text és exactament». **[0,75 punts]**
 
 ---
 
 ## Part D · Teoria (1 punt, al fitxer `teoria.md`)
 
-Respon aquestes preguntes amb frases completes al fitxer `teoria.md` del teu repositori. A la [plantilla](https://github.com/adriasantacreu/examen-prog-1bat-plantilla) (`teoria.md`) tens el títol i els apartats de cada resposta ja posats: copia'l al teu repositori i escriu-hi sota cada títol.
+Respon aquesta pregunta amb frases completes al fitxer `teoria.md` del teu repositori. A la [plantilla](https://github.com/adriasantacreu/examen-prog-1bat-plantilla) (`teoria.md`) tens el títol i els apartats de cada resposta ja posats: copia'l al teu repositori i escriu-hi sota cada títol.
 
-**D1.** Un company escriu a `M2` la fórmula `=E2*86400+F2*L2` i l'omple cap avall fins a `M3`. Escriu quina fórmula queda a `M3`, quin és el problema que causa i com s'ha de modificar la fórmula de `M2` perquè en omplir-la bé tot vagi correcte. **[0,5 punts]**
-
-**D2.** Per validar un codi postal (cinc xifres) escrivim el patró `^\d{5}$` i no només `\d{5}`. Escriu un text concret on els dos patrons donarien resultats diferents i digues quin resultat (`TRUE`/`FALSE`) dona cada un. **[0,5 punts]**
+**D1.** Un company escriu a `M2` la fórmula `=E2*86400+F2*L2` i l'omple cap avall fins a `M3`. Escriu quina fórmula queda a `M3`, quin és el problema que causa i com s'ha de modificar la fórmula de `M2` perquè en omplir-la bé tot vagi correcte. **[1 punt]**
 
 ---
 

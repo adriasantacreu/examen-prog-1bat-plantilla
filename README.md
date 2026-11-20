@@ -1,4 +1,6 @@
-# Plantilla de l'examen trimestral · 1BAT Programació i robòtica
+# Examen trimestral · 1BAT Programació i robòtica
+
+**L'enunciat és a [ENUNCIAT.md](ENUNCIAT.md).** Llegeix-lo aquí, en línia.
 
 Aquest repositori conté les plantilles de resposta de l'examen: `test.md` (el test) i `teoria.md` (les preguntes de teoria D1 i D2).
 
